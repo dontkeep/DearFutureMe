@@ -32,7 +32,7 @@
       />
       <textarea
         v-model="text"
-        class="w-full h-72 md:h-96 p-4 rounded-2xl shadow-inner border border-gray-700 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-200 bg-gray-900 text-sm text-gray-100 resize-none transition-all duration-200 outline-none placeholder-gray-500"
+        class="w-full h-72 md:h-96 p-4 rounded-2xl shadow-inner border border-gray-700 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-200 bg-gray-900 text-sm text-gray-100 resize-none transition-all duration-200 outline-none placeholder-gray-500 custom-scrollbar"
         placeholder="Write your message to your future self..."
       ></textarea>
       <div class="w-full flex justify-between items-end mt-2">
@@ -101,4 +101,23 @@ function sendLetter() {
   alert('Your letter has been sent!');
 }
 </script>
+
+<style scoped>
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #6366f1; /* indigo-500 */
+  border-radius: 8px;
+  border: 2px solid #1e293b; /* gray-800 */
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #818cf8; /* indigo-400 */
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #6366f1 #1e293b;
+}
+</style>
 
