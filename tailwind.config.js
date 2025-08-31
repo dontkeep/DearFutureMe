@@ -4,19 +4,17 @@ export default {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}"
   ],
+  darkMode: 'class', // ✅ Enable class-based dark mode
   theme: {
     extend: {
       colors: {
-        whisperBlue: '#E3EAF6',
-        whisperPink: '#FDE2E4',
-        whisperGray: '#F4F4F8',
-        whisperDark: '#1F1F2E',
-      },
-      fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+        primary: '#a3c4f3',
+        'primary-dark': '#82a3d7',
+        whisperGray: '#f8f9fa',
+        whisperDark: '#1f2937',
+        whisperPink: '#fbb6ce',
       },
     },
   },
   plugins: [],
 }
-

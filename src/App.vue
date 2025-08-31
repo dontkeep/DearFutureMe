@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import TextAreaInput from './components/TextAreaInput.vue'
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <TextAreaInput />
+  <RouterView />
 </template>

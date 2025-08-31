@@ -14,6 +14,6 @@ export default defineConfig({
   },
   server: {
     host: true,
-    allowedHosts: ['dearfutureme.loyaltytkp.com']
+    allowedHosts: ['whisper.loyaltytkp.com']
   }
 })
